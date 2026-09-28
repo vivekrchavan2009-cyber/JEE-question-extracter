@@ -455,12 +455,12 @@ function toast(msg, ms) {
 /* ---------------- settings ---------------- */
 const DEFAULTS = {
   key: "", endpoint: "",
-  visionModel: "qwen/qwen3.6-27b",
+  visionModel: "qwen/qwen3.8-27b",
   textModel: "openai/gpt-oss-120b",
   rpm: 15, conc: 2, depth: "balanced"
 };
-const FALLBACK_VISION = ["qwen/qwen3.6-27b", "meta-llama/llama-4-scout-17b-16e-instruct", "meta-llama/llama-4-maverick-17b-128e-instruct"];
-const FALLBACK_TEXT = ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3.6-27b", "llama-3.3-70b-versatile"];
+const FALLBACK_VISION = ["qwen/qwen3.8-27b", "meta-llama/llama-4-scout-17b-16e-instruct", "meta-llama/llama-4-maverick-17b-128e-instruct"];
+const FALLBACK_TEXT = ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3.8-27b", "llama-3.3-70b-versatile"];
 
 let S = Object.assign({}, DEFAULTS);
 try { S = Object.assign(S, JSON.parse(localStorage.getItem("jqe.settings") || "{}")); } catch (e) { }
